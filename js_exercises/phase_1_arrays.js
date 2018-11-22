@@ -28,3 +28,28 @@ Array.prototype.twoSum = function(target) {
   }
   return answer;
 };
+
+
+//Array#transpose
+
+Array.prototype.transpose = function() {
+  let transposed = [];
+  
+  for (let i = 0; i < this.length; i++) {
+    let col = [];
+    for (let j = 0; j < this.length; j++) {
+      col.push(this[j][i]);
+    }
+    transposed.push(col);
+  }
+  
+  return transposed;
+};
+
+
+
+
+
+
+
+
